@@ -7,10 +7,10 @@ public class Empregado {
     public Empregado(){
 
     }
-    public Empregado(String nome, String endereco, double salario) {
+    public Empregado(String nome, String endereco) {
         this.nome = nome;
         this.endereco = endereco;
-        this.salario = salario;
+        // this.salario = salario;
     }
 
     public String getNome() {
@@ -41,7 +41,7 @@ public class Empregado {
         double aux = 0;
         if (salario >= 2112.01 && salario <= 2826.66) {
             aux = salario * 0.075;
-        } else if (salario >= 2826.67 && salario <= 3751.05) {
+        } else if (salario >= 2826.67 && salario <= 3751.06) {
             aux = salario * 0.15;
         } else if (salario >= 3751.06 && salario <= 4664.68) {
             aux = salario * 0.225;
@@ -64,4 +64,5 @@ public class Empregado {
         }
         return aux;
     }
+
 }
