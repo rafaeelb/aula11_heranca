@@ -10,7 +10,6 @@ public class Empregado {
     public Empregado(String nome, String endereco) {
         this.nome = nome;
         this.endereco = endereco;
-        // this.salario = salario;
     }
 
     public String getNome() {
@@ -40,13 +39,13 @@ public class Empregado {
     public double calcularIrpf(){
         double aux = 0;
         if (salario >= 2112.01 && salario <= 2826.66) {
-            aux = salario * 0.075;
-        } else if (salario >= 2826.67 && salario <= 3751.06) {
-            aux = salario * 0.15;
+            aux = salario * 0.075 - 142.80;
+        } else if (salario >= 2826.67 && salario <= 3751.05) {
+            aux = salario * 0.15 - 354.80;
         } else if (salario >= 3751.06 && salario <= 4664.68) {
-            aux = salario * 0.225;
+            aux = salario * 0.225 - 636.13;
         } else if (salario > 4664.68) {
-            aux = salario * 0.275;
+            aux = salario * 0.275 - 869.36;
         }
         return (aux);
     }
@@ -55,7 +54,7 @@ public class Empregado {
         double aux = 0;
         if (salario <=1412) {
             aux = salario * 0.075;
-        } else if(salario > 1412 && salario < 2667) {
+        } else if(salario > 1412 && salario <= 2667) {
             aux = salario * 0.09;
         }else if(salario >2667 && salario < 4000) {
             aux = salario * 0.12;
