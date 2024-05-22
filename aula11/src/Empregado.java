@@ -7,9 +7,10 @@ public class Empregado {
     public Empregado(){
 
     }
-    public Empregado(String nome, String endereco) {
+    public Empregado(String nome, String endereco, double salario) {
         this.nome = nome;
         this.endereco = endereco;
+        this.salario = salario;
     }
 
     public String getNome() {

@@ -9,8 +9,8 @@ public class Mensalista extends Empregado {
         this.cargo = cargo;
     }
     
-    public Mensalista(String nome, String endereco, String cargo){
-        super(nome, endereco);
+    public Mensalista(String nome, String endereco, double salario, String cargo){
+        super(nome, endereco, salario);
         this.cargo = cargo;
     }
 

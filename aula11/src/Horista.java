@@ -2,8 +2,8 @@ public class Horista extends Empregado {
     
     private double horas;
 
-    public Horista(String nome, String endereco,  double horas){
-        super(nome, endereco);
+    public Horista(String nome, String endereco, double salario, double horas){
+        super(nome, endereco, salario);
         this.horas = horas;
     }
 
